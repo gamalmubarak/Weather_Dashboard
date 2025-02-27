@@ -55,14 +55,12 @@ class WeatherService {
     return { lat, lon };
   }
 
-  // TODO: Create buildGeocodeQuery method
-  // private buildGeocodeQuery(): string {}
+ 
   // TODO: Create buildWeatherQuery method
   private buildWeatherQuery(coordinates: Coordinates): string {
     return `${this.baseURL}/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&units=metric&appid=${this.apiKey}`;
   }
-  // TODO: Create fetchAndDestructureLocationData method
-  // private async fetchAndDestructureLocationData() {}
+  
   // TODO: Create fetchWeatherData method
   private async fetchWeatherData(coordinates: Coordinates): Promise<any> {
     const queryURL = this.buildWeatherQuery(coordinates);
