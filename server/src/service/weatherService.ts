@@ -89,7 +89,18 @@ class WeatherService {
     );
   }
   // TODO: Complete buildForecastArray method
-  // private buildForecastArray(currentWeather: Weather, weatherData: any[]) {}
+  private buildForecastArray(currentWeather: Weather, weatherData: any[]): Weather[] {
+    const forecastArray: Weather[] = [];
+    let currentDate = new Date(currentWeather.date).getDate();
+    weatherData.forEach(data => {
+      const date = new Date(data.dt_txt).getDate();
+      if (date !== currentDate) {
+        forecastArray.push(this.parseCurrentWeather(data));
+        currentDate = date;
+      }
+    });
+    return forecastArray;
+  }
   // TODO: Complete getWeatherForCity method
   // async getWeatherForCity(city: string) {}
 }
