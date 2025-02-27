@@ -13,6 +13,8 @@ router.post('/', (req: Request, res: Response) => {
         return res.status(400).json({ error: 'City name is required' });
       }
   // TODO: GET weather data from city name
+  const weatherData = await WeatherService.getWeatherForCity(cityName);
+  
   // TODO: save city to search history
 });
 
