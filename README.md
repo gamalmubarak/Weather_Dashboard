@@ -5,7 +5,7 @@
 
  ## Repository Description
  ###### [Back to Table of Contents](#table-of-contents)
-  The Weather Dashboard is a web application that allows users to view weather information for various locations. It features a user-friendly interface and provides real-time weather data.
+  The Weather Dashboard is a web application that calls the OpenWeather API and renders data in the browser.
 
 
 
@@ -34,7 +34,7 @@
   ```sh
  npm run start:dev 
   ```
- Open your web browser and navigate to `http://localhost:3001` to view the Weather Dashboard.
+  Open your web browser and navigate to `http://localhost:3001` to view the Weather Dashboard.
 
   ---
 
