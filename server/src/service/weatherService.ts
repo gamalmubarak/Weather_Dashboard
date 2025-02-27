@@ -47,7 +47,14 @@ class WeatherService {
   }
 
   // TODO: Create destructureLocationData method
-  // private destructureLocationData(locationData: Coordinates): Coordinates {}
+  private destructureLocationData(locationData: any[]): Coordinates {
+    if (!locationData || locationData.length === 0) {
+      throw new Error('Location not found');
+    }
+    const { lat, lon } = locationData[0];
+    return { lat, lon };
+  }
+
   // TODO: Create buildGeocodeQuery method
   // private buildGeocodeQuery(): string {}
   // TODO: Create buildWeatherQuery method
