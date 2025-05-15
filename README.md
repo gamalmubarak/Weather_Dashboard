@@ -3,16 +3,18 @@
   ---
 
 
- ## Repository Description
+ ##  Description
  ###### [Back to Table of Contents](#table-of-contents)
   The Weather Dashboard is a web application that calls the OpenWeather API and renders data in the browser.
 
 
 
  ## Table of Contents
-  * [Repository Description](#repository-description)
-  * [Installation Instructions](#installation)
+  * [ Description](#description)
+  * [Installation ](#installation)
   * [Usage Information](#usage)
+  * [Application Demo](#Application-Demo)
+  * [License](#license)
   * [Contribution Guidelines](#contribution-guidelines)
   * [Test Instructions](#test-instructions)
   * [Questions](#questions)
@@ -37,6 +39,17 @@
   Open your web browser and navigate to `http://localhost:3001` to view the Weather Dashboard.
 
   ---
+
+ ## Application Demo
+
+ The application is deployed on Render. You can access it at:(https://weather-dashboard-5118.onrender.com/)
+
+ see this screenshots of the app:
+ (https://1drv.ms/i/c/3b216777a5c674e6/EVqkJdtniPlCuURIGxy2YsMBRpz05sRFMwdcdrot18KMVQ?e=uTRtAO)
+ (https://1drv.ms/i/c/3b216777a5c674e6/Edwl7wbj9VRPhxwCZ53NE8kBr4AztxS63hggxZF_uktMow?e=6jN0GD)
+ (https://1drv.ms/i/c/3b216777a5c674e6/EVh_UJIOqHpPpLHRkLomvR4B08LX-epHplcj3i-DFrO5og?e=ot719s)
+ 
+ ---
 
   ## License
     Project license: MIT 
